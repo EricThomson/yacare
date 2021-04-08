@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 
 def norm_nrg(a_):
     """
@@ -40,6 +41,8 @@ def plot_registration(spatial, matches, non_matches, template1, template2=None, 
         Add legend for first sessionn, second session.
         Might be nice to have template1/template 2 as a second row or second figure. 
     """
+    text_size = 24
+    
     color1 = contour_colors[0]
     color2 = contour_colors[1]
     width1 = contour_widths[0]
@@ -69,7 +72,13 @@ def plot_registration(spatial, matches, non_matches, template1, template2=None, 
     
     [plt.contour(norm_nrg(mm), levels=[level], colors=color1, linewidths=width1) for mm in masks_1[matches[0]]]
     [plt.contour(norm_nrg(mm), levels=[level], colors=color2, linewidths=width2) for mm in masks_2[matches[1]]]
-    plt.title('Matches')
+    lines = [Line2D([0], [0], color=c, linewidth=2) for c in contour_colors]
+    labels = ['A1', 'A2']
+    #plt.rc.('legend', fontsize = 12)
+    plt.legend(lines, labels, fontsize = text_size)
+    
+    
+    plt.title('Matches', fontsize=text_size)
     plt.axis('off')
 
     if template2 is not None:
@@ -79,13 +88,16 @@ def plot_registration(spatial, matches, non_matches, template1, template2=None, 
     plt.imshow(template1, vmin=lp, vmax=hp, cmap=cmap)
     [plt.contour(norm_nrg(mm), levels=[level], colors=color1, linewidths=width1) for mm in masks_1[non_matches[0]]]
     [plt.contour(norm_nrg(mm), levels=[level], colors=color2, linewidths=width2) for mm in masks_2[non_matches[1]]]
-    plt.title('Mismatches')
+    plt.legend(lines, labels, fontsize = text_size)
+    plt.title('Mismatches', fontsize=text_size)
     plt.axis('off')
     
     if template2 is not None:
         lp2, hp2 = np.nanpercentile(template2, percentile_lims)
         plt.subplot(133, sharex=ax1, sharey = ax1)
         plt.imshow(template2, cmap=cmap)
+        plt.title('Template 2', fontsize = text_size)
+        plt.axis('off')
     
     plt.tight_layout()
 

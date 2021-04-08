@@ -3,4 +3,5 @@ Utilities for [caiman](https://github.com/flatironinstitute/CaImAn) for calcium 
 
 ## to do
 for plot_registration:
-- fix plot_registration so it can take rgb colors too.
+- documentation is meh
+- fix so it can take rgb colors too
