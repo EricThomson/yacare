@@ -5,3 +5,7 @@ Utilities for [caiman](https://github.com/flatironinstitute/CaImAn) for calcium 
 for plot_registration:
 - documentation is meh
 - fix so it can take rgb colors too
+
+
+## Acknowledgments
+Developed with support from NIH Bioinformatics and the Neurobehavioral Core at NIEHS.
