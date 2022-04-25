@@ -4,3 +4,5 @@
 desktop.ini
 *dll*
 *exe*
+.ipynb_checkpoints/
+working/
