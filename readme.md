@@ -1,7 +1,7 @@
 # yacare
 <img width = "200" src="./data/yacare_caiman.jpg" align="right" style="padding-left:15px">
 
-Companion to [CaImAn](https://github.com/flatironinstitute/CaImAn) for calcium imaging analysis. There are a lot of questions that tend to come up frequently in [caiman's gitter forum](https://gitter.im/agiovann/Constrained_NMF), and many useful tools embedded in caiman that are not illustrated in the demos. Yacare will address them in standalone Jupyter notebooks with the goal to be relatively explanation-heavy. It mainly assumes you have a working caiman virtual environment.
+A companion to [CaImAn](https://github.com/flatironinstitute/CaImAn) for calcium imaging analysis. There are some questions that come up frequently in [caiman's gitter forum](https://gitter.im/agiovann/Constrained_NMF), and many useful tools embedded in caiman that are not illustrated in the demos. The goal of yacare is to tackle these topics in standalone Jupyter notebooks. It mainly assumes you have a working caiman virtual environment.
 
 Yacare is named after the South American [yacare caiman](https://en.wikipedia.org/wiki/Yacare_caiman), pictured above.
 
