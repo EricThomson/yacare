@@ -13,9 +13,11 @@ If you want to contribute, or want to see a topic covered, please open an issue.
 
 ## To do
 - Multisession registration
+- How to manually remove units
+- Plotting denoised movies
 - Seed plot for cnmfe
 
 ## Acknowledgments
 - Developed with support from NIH Bioinformatics and the Neurobehavioral Core at NIEHS.
-- The caiman developers and community for providing such useful tools.
+- The caiman developers and community for providing such useful tools and feedback.
 - Yacare caiman image is from [Wikimedia](https://commons.wikimedia.org/wiki/File:Brillenkaiman_Caiman_yacare.jpg).
